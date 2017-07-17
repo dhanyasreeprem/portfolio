@@ -6,7 +6,7 @@
       <style>
         
         body{
-          font:15px/1.5 Abril Fatface;
+          font:15px/1.5 Papyrus;
           padding:1;
           margin:0
           background-color:#f4f4f4;
@@ -44,23 +44,101 @@
         <div class= "dance">
             <p> Hi! I am Dhanya. I am a rising junior in Cupertino High School. I am passionate about Computer Science and Astronomy. I am an avid hacker and programmer. I am involved in many other activities outside of school such as dance and music. I actively participate in FBLA and Speech and Debate. Learning has been my passion and I strive to learn more skills and make this world a better place with the use of computer science. Recently I got involved in Machine Learning and Natural Language Processing and I plan to work on more projects intergrating ML and Astronomy. Hope you enjoy my website!<p>
           </div>
-        <section id="boxes">
-          <div class="container">
-            <div class="box">
-              <h2>Projects</h2>
-              <img src="shape1.JPG" alt="PaddleBall" height="100" width="100">
-              <h3> Paddleball  </h3>
-            </div>
-            <div class="box">
-              <img src="shape3.JPG" alt="HorseRun" height="100" width="100">
-              <h3> Horse Run  </h3>
-            </div>
-            <div class="box">
-              <img src= "shape.JPG" alt="DrawShape" height="100" width="100">
-              <h3> Draw Shape  </h3>
-            </div>
-          </div>
-        </section>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Activate Carousel with JavaScript</h2>
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+      <li class="item4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="shape.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="shape1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="shape3.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+     
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel();
+    
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+    
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+    });
+});
+</script>
         </body>
         
         <footer>
