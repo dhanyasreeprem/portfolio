@@ -44,7 +44,8 @@
         .topnav a.active{
           background-color: #4CAF50;
           color: white;
-          .sidenav {
+        }
+     .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -87,6 +88,26 @@
   
       <title> Dhanya | Welcome </title>
       </head>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Projects</a>
+  <a href="#">About Me</a>
+  <a href="#">Contact Me</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
     <header>
         <div class = "topnav" id= "myTopnav">
           <a href= >Home</a>
@@ -95,6 +116,7 @@
           <a href= >About</a>
         </div>
     </header>
+    
    
     <section class="description" style="max-width:1200px">
       <h2 class="intro" style="font-family: 'Homemade Apple', cursive" align="center"> Dhanya</h2>
@@ -187,26 +209,7 @@
               });
           });
           </script>
-  <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Projects</a>
-  <a href="#">About Me</a>
-  <a href="#">Contact Me</a>
-</div>
-
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+  
     </body>
 <footer>
   <p> Dhanya </p>
